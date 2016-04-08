@@ -1,6 +1,6 @@
 {
   "name": "daily-message",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Messages based on time of day (Good Morning, Good Afternoon and Good Night)",
   "main": "lib/components/daily-message/index.js",
   "scripts": {
