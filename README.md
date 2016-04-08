@@ -13,6 +13,9 @@ npm install daily-message --save
 
 ## Example: 
 
+```javascript
+
+import React from 'react';
 import DailyMessage from 'daily-message';
 
 const YourComponent = React.createClass({
@@ -24,6 +27,8 @@ const YourComponent = React.createClass({
 
 });
 
+export default YourComponent;
+```
 
 ## Development
 
