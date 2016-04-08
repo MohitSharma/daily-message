@@ -1,11 +1,10 @@
 import React from 'react';
 
-const DailyMessage = React.createClass({
-    propTypes: {
-        customMessage: React.PropTypes.string,
-        customClass: React.PropTypes.string
-    },
-    getDefaultProps () {
+class DailyMessage extends React.Component {
+    constructor() {
+        super();
+    }
+    static get defaultProps() {
         let hrs = new Date().getHours();
         let dailyMessage = "Good Day";
         if (hrs >=0 && hrs < 12) {
@@ -18,10 +17,11 @@ const DailyMessage = React.createClass({
             dailyMessage = "Good Night"
         }
         return {
-            dailyMessage: dailyMessage,
-            customMessage: '!'
+            dailyMessage : dailyMessage,
+            customMessage: "!"
         };
-    },
+    }
+
     render () {
         return (
             <div className={this.props.customClass}>
@@ -29,6 +29,11 @@ const DailyMessage = React.createClass({
             </div>
         );
     }
-});
+}
+
+DailyMessage.propTypes = {
+    customMessage: React.PropTypes.string,
+    customClass: React.PropTypes.string
+};
 
 export default DailyMessage;
