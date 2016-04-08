@@ -31,6 +31,7 @@ const YourComponent = React.createClass({
 npm install
 npm run build
 npm run dev-server
+```
 
 
 ## Future Development
