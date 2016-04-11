@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import DailyMessage from '../components/daily-message/index.jsx';
 
 class App extends React.Component {
@@ -10,7 +11,7 @@ class App extends React.Component {
 
 }
 
-React.render(
+ReactDOM.render(
   <App />,
   document.getElementById('app')
 );

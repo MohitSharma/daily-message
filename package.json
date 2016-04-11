@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/MohitSharma/daily-message#readme",
   "dependencies": {
-    "react": "^0.13.1"
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
   },
   "devDependencies": {
     "babel-cli": "^6.4.5",
